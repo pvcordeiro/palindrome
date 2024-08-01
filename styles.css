@@ -1,0 +1,80 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-background: rgb(6, 75, 87);
+    --container-background: rgb(52, 94, 97);
+    --font-color: rgb(255, 255, 255);
+    --border: rgb(0, 255, 221);
+    --input-color: rgb(0, 156, 135);
+    --font: verdana;
+}
+
+body {
+    background-color: var(--main-background);
+    font-family: var(--font);
+    color: var(--font-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+}
+
+.palindrome-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 450px;
+    background-color: var(--container-background);
+    color: var(--font-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 7px -2px var(--border);
+    text-align: center;
+}
+
+.palindrome-input {
+    border-style: none;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--container-background);
+    padding: .7rem;
+    font-size: 1.3rem;
+    color: var(--font-color);
+    outline-style: none;
+}
+
+.palindrome-btn {
+    background-color: var(--input-color);
+    border-radius: 1rem;
+    padding: .7rem 2rem;
+    border-style: none;
+    color: var(--font-color);
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.results-div {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
